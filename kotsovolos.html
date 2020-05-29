@@ -1,0 +1,764 @@
+<html>
+<head>
+<title> kotsovolos</title>
+<meta charset="utf-8">
+<style type="text/css" medi="screen,projetion">
+body{
+background-image:url("eikones/skin.jpg");
+background-position:center top;
+background-attachment:fixed;
+font-family:Arial;
+}
+#kentriko{width:1020px; margin:0 auto; position:relative; }
+#kef1{width:100%; background-color:#b5191d;height:60px }
+#logo{float:left; width:19%; margin-top:8px }
+#logo img{ width:100%; }
+
+
+.antikimena_kef1{width:160px; float:right; padding:8px; margin-top:5px}
+.antikimena_kef1 ul{width:160px; float:left;   position:relative;padding-left:0}
+.antikimena_kef1 ul li{display:block; margin-bottom:10px; }
+.antikimena_kef1 span.white{width:120px; float:right; color:white; font-size:21px; }
+.antikimena_kef1 span.white2{width:120px; float:right; color:white; font-size:19px; }
+.antikimena_kef1 ul li a{text-decoration:none;background-color:none;color:black;}
+
+
+
+
+
+#log {color:white; padding:5px 15px }
+#log span:hover{color:black; background-color:white; }
+#log{position:relative;display: inline-block; }
+#ant_log{display:none; position:absolute; background-color:white; z-index: 1; color:black; width:178px; padding:5px 10px ;left:0px;}
+#ant_log span{padding:5px 15px }
+#ant_log ul li{padding:5px 0px }
+#ant_log ul li:hover{background-color:#4ac1c7; padding:5px 0px }
+#ant_log ul li a span{color:black; background-image:url(eikones/vel.jpg); background-repeat:repeat; width:94%;display:block;}
+#log:hover #ant_log {display: block; color:black; }
+#log:hover {background-color:white; color:black; }
+
+
+#kalathi{display:none;  position:absolute; z-index: 1;  width:260px; padding:5px 10px; right:-2px; margin-right:10px }
+#kalathi ul li{width:250px; margin-right:10px; }
+.antikimena_kef1:hover #kalathi{display:block; color:black; background-color:white; color:black;}
+.antikimena_kef1 span.white:hover{background-color:white; color:black; padding:0}
+
+#kef2{width:100%; padding:1px 0px; background-color:black; color:white; list-style-type:none; font-size:19px;}
+#kef2 ul{ margin-left:0px; width:10%;list-style-type:none;position:relative;text-align:left;left:0;display:inline;top:10px;padding:0;}
+
+#kef2 ul li a{text-decoration:none; color:black;padding:10px 12px}
+#kef2 ul a:hover{background-color:white; color:red; width:150px}
+
+#kef2 ul span{ margin-left:15px; width:4%}
+#kef2 div.anaz{ background-color:white;float:right; width:38%; height:32px; border-radius:5px;border:0;margin-right:20px;padding-left:10px; margin-top:8px;margin-bottom:8px; }
+#kef2 input{float:left; width:80%; height:32px; border-radius:5px;border:0;margin-left:10px;}
+#kef2 img{width:40px; float:right; margin-right:10px; margin-top:2px}
+
+.kata{position:relative; width:120px; float:left; display:inline; margin-top:10px;margin-left:15px;padding:4px 6px;font-size:17px}
+.kata2{width:120px; float:left; display:inline; margin-top:12px;margin-left:15px;font-size:17px}
+.kata:hover{background-color:white; color:black; padding:4px 6px}
+.ant_kata{position:absolute; z-index:1; background-color:white; color:black; top:26px; left:0px; display:none;}
+.ant_kata ul li{padding:8px 10px; width:170px }
+.kata:hover .ant_kata{display: block;}
+#kef2 ul li ul li{padding:7px 2px}
+
+
+#kef3{width:100%; background-color:#b5191d;}
+.antikimena_kef3{width:4%; float:left; margin:5px }
+.antikimena_kef3 img{width:100%;}
+.logia{width:17%; float:left; color:white; border-right-style:solid; border-color:#898582; border-right-width:1px; padding:5px;font-size:14px;  }
+.logia span{font-size:12px; color:white;}
+#kathetos span{border-right-style:solid; }
+#email{width:24%; float:left; color:white;  padding:5px;font-size:14px; font-size:12px; }
+#email_koumpi{width:55px; text-decoration:none; border-width:1px; color:white; border-color:white; border-style:solid; float:right; font-size:12px; margin-right:2px; padding:5px;font-weight:bold;}
+#email_koumpi:hover{background-color:white;color:black}
+
+
+#dialekste_katigoria{width:80%; float:right; background-color:#b5191d; }
+#dialekste_katigoria img{width:100%;}
+
+
+#ekptoseis{width:100%;}
+#ekptoseis img{width:100%;}
+#ekptoseis_2{width:20%; position:absolute; top:180px;}
+#ekptoseis_2 img{width:100%; position:relative;}
+
+.em2{
+background-color:#b5191d;
+border:0;
+color:white;
+border-bottom:1px solid white;
+width:160px;
+padding:5px;
+}
+
+#plesio_horeka{width:1020px}
+.horeca{width:240px; background-color:white; margin-top:20px; margin-left:12px; float:left}
+
+#plesio_huawei{width:1020px}
+#huawei{width:325px; margin:40px 10px 0px 0px; float:left}
+#huawei img{width:325px; }
+#weber{width:670px; float:left; margin:40px 0px 0px 15px;}
+#weber img{width:670px;}
+
+#hot_proionta{width:1020px; background-color:white; margin-top:15px; padding-bottom:30px; }
+#kef_hot_proionta{width:960px; color:#d01f26; font-size:30px; border-bottom:solid 2px #cccccc; padding:20px 0px 10px 0px;margin-left:30px; }
+.ant_hot_proionta{width:209px; margin-left:45px; float:left; margin-top:10px; height:330px; position:relative;font-size:14px;}
+.eikona {width:200px;height:200px}
+.ant_hot_proionta img.megeikona{width:190px }
+.ant_hot_proionta img.megeikona:hover{width:200px }
+.ant_hot_proionta span{width:200px;color:#666}
+.ant_hot_proionta span b{color:#444;font-weight:normal}
+.minimata{width:10px; position:absolute;}
+.kodikos{color:gray}
+.timi{color:#d55a5e; width:200px; margin-top:15px; font-size:19px; }
+.timi span{color:gray;font-size:15px}
+.diagrafi{color:gray;text-decoration:line-through #d55a5e;font-size:15px}
+.agora{background-image:url(eikones/agora.png);width:166px; height:38px;}
+.agora:hover{background-position:0px 38px;}
+
+
+#perig_espa{width:1020px}
+.antikimena_espa{width:501px; margin-top:40px; float:left}
+.antikimena_espa{width:510px;}
+
+#korifees_epixiriseis{width:1020px; margin-top:20px; }
+
+#dimofili_proionta{width:1020px; background-color:white; margin-top:15px; padding-bottom:30px; position:relative }
+#kef_dimofili_proionta{width:960px; color:#d01f26; font-size:30px; border-bottom:solid 2px #cccccc; padding:20px 0px 10px 0px;margin-left:30px; }
+.ant_dimofili_proionta{position:relative; width:209px; margin-left:45px; float:left; margin-top:10px;height:330px; position:relative;}
+.eikona2{width:200px; height:200px;}
+.ant_dimofili_proionta img.eikonmeg{width:190px;}
+.ant_dimofili_proionta img.eikonmeg:hover{width:200px}
+.ant_dimofili_proionta span{width:200px;color:#666}
+.ant_dimofili_proionta span b{color:#444;font-weight:normal;font-size:14px; }
+.minimata{width:10px; position:absolute;}
+.agora2{background-image:url(eikones/agora.png);width:166px; height:38px}
+.agora2:hover{background-position:0px 38px}
+.kodikos_dimofili_proionta{color:gray; font-size:12px;}
+.timi_dimofili_proionta{color:#d55a5e; width:200px; margin-top:30px; font-size:19px; }
+.timi_dimofili_proionta span{color:gray;font-size:15px }
+.diagrafi_dimofili_proionta{color:gray;text-decoration:line-through #d55a5e;font-size:15px}
+.velaki{position:absolute; right:-30px; bottom:220px; background-color:white; width:60px; height:60px; border-radius:80px; text-align:center; line-height:60px; box-shadow: 0px 6px 6px #1155;}
+.velaki_koumpi{width:30px; text-decoration:none; font-weight:bolder; font-size:30px;}
+.velaki2{position:absolute; left:-840px; bottom:220px; background-color:white; width:60px; height:60px; border-radius:80px; text-align:center; line-height:60px; box-shadow: 0px 6px 6px #1155;}
+.velaki_koumpi2{width:30px; text-decoration:none;  font-weight:bolder; font-size:30px;}
+.velaki3{position:absolute; left:-31px; bottom:220px; background-color:white; width:60px; height:60px; border-radius:80px; text-align:center; line-height:60px; box-shadow: 0px 6px 6px #1155;}
+.velaki_koumpi3{width:30px; text-decoration:none; font-weight:bolder; font-size:30px;}
+
+#plesio_kathe_paraskevh{width:1020px; height:710px;margin-top:20px;padding:0;margin-bottom:35px;}
+#kathe_paraskevh{width:510px; float:left;}
+#kathe_paraskevh img{width:510px; float:left;}
+#chef{width:510px; float:left;}
+#chef img{width:510px; float:left;}
+#minima1{background-image:url(eikones/cta-tryme.png); width:260px; height:42px; position:relative; bottom:72px;left:124px;background-size:260px 90px;background-repeat:no-repeat;background-position:0px -3px}
+#minima1:hover{background-position:0px -49.9px}
+
+#minima2{background-image:url(eikones/cta-chef.png); bottom:112px; left:635px; background-size:260px; width:260px; height:40.5px; background-repeat:no-repeat; position:relative;background-position:0px 1px }
+#minima2:hover{background-position:0px -36.7px}
+
+#iposelido_1{width:100%; background-color:red; position:absolute;background-image:url(eikones/fonto.png); margin-top:30px;}
+#fakelos{width:100px; float:left}
+#fakelos img{width:100px;}
+#kimeno{width:190px; float:left;  font-size:28px; color:white; font-weight:bolder; margin-top:10px; margin-left:15px }
+#mail2{width:370px; float:left;background-color:white  }
+#mail2 #pp{padding:10px; padding-right:0px; margin-top:10px}
+#mail2 #pp placeholder{text-align:left }
+#email_koumpi2{width:55px; text-decoration:none;  padding:5px; padding-left:15px; padding-right:15px; bottom:-10px;  border-width:1px; color:white; background-color:black;   float:right; font-size:12px; margin-right:2px;font-weight:bold; position:relative}
+.social{float:right; width250px; margin-left:30px}
+
+
+#iposelido2{width:100%; background-color:#f2f2f2; margin:0 auto; margin-top:100px; }
+.listes{float:left; background-color:#f2f2f2; color:#be0007; font-size:14px; margin-right:1px; list-style-type:none; margin-left:8px;text-align:left;padding-top:16px;width:18%; font-weight:bolder}
+.eikonidia{width:100px; float:left; margin-top:20px}
+.listes ul{text-align:left; color:#e00067;  font-size:4px; font-weight:normal;list-style:none;color:#666;padding:0}
+.listes li{margin-bottom:5px;  font-size:11px;}
+
+
+#kblog{width:100%; border-bottom-style:solid; border-width:1px; border-color:grey }
+#icon_kblog{width:150px; float:left}
+#kita_kblog a{float:right; width:130px; margin-top:20px; text-decoration:none; color:#333333; font-size:17px; font-weight:bolder}
+
+
+#ant_kblog{width:100%; margin-top:20px;}
+.antikimena_kblog{width:240px;border-style:solid; border-width:1px; border-color:grey; background-color:white; float:left; padding:0px 5px  }
+.eikona_kblog{width:220px; margin-left:8px; padding:5px 0px;height:220px; margin-bottom:35px}
+.eikona_kblog img{width:100%; }
+.eikona_kblog img:hover{width:102%}
+.plir_kblog{width:200px; border-bottom-style:solid; border-width:1px; border-color:grey; padding:0px 8px; margin-bottom:35px; font-size:14px;}
+.plir_kblog b{color:#e00067; font-weight:bolder; font-size:18px;}
+.keimeno{padding:0px 8px; font-size:14px; margin-bottom:15px}
+.koumpi_kblog{float:right; width:100px; font-size:14px;}
+.koumpi_kblog a{float:right; text-decoration:none; color:#333333; margin-bottom:5px}
+.koumpi_kblog a:hover{border-bottom-style:solid; border-width:1px; border-color:grey;}
+
+</style>
+</head>
+<body>
+<div id="kentriko">
+
+<div id="kef1">
+<div id="logo">
+<img src="eikones/kotsovolos.png"/>
+</div>
+
+<div id="per">
+<div class="antikimena_kef1">
+<a href=""> <img src="eikones/kotsovolos_kalathi.png"><span class="white"><b>0.00 &euro;(0)</b></span></a>
+<div id="kalathi">
+<ul>
+<li><img src="eikones/agora_1.jpg"></li>
+<li><img src="eikones/agora_2.jpg"></li>
+</ul>
+</div>
+
+</div>
+
+<div class="antikimena_kef1" style="width:250px;">
+<img src="eikones/kotsovolos_anthropaki.png" style="float:left">
+
+<div id="log"> 
+<span>Ο ΛΟΓΑΡΙΑΣΜΟΣ ΜΟΥ</span>
+<div id="ant_log">
+<ul>
+<li><a href=""><span>Είσοδος</span></a></li>
+<li><a href="">Νέος πελάτης</a></li>
+<li><a href="">Ο Λoγαριασμος μου</a></li>
+<li><a href="">Τα στοιχεία μου</a></li>
+<li><a href="">Οι παραγγελίες μου</a></li>
+</ul>
+</li>
+</div>
+</div>
+</div>
+
+
+<div class="antikimena_kef1">
+<img src="eikones/kotsovolos_kinito.png"><span class="white2"><b>210 2899 999</b></span>
+</div>
+
+<div style="clear:both"></div>
+
+</div>
+
+<div id="kef2">
+<div class="kata">
+<b>ΠΡΟΪΟΝΤΑ</b>
+<div class="ant_kata">
+	<ul>
+	<li><a href="" >Εικόνα&Ήχος</li></a>
+	<li><a href="" >Imaging</li></a>
+	<li><a href="" >Computing</li></a>
+	<li><a href="" >Τηλεφωνία& GPS</li></a>
+	<li><a href="" >Gaming</li></a>
+	</ul>
+	<br>
+	</div>
+</div>
+<div class="kata2">ΚΑΤΑΣΤΗΜΑΤΑ</div>
+
+
+
+<div class="anaz">
+<img src="eikones/kotsovolos_megenthintikos.png"/>
+<input type="text" placeholder="Αναζητήστε κάποιο προϊόν,brand ή κατηγορία" />
+</div>
+<div style="clear:both"></div>
+</div>
+
+
+<div id="kef3">
+
+<div class="antikimena_kef3">
+<img src="eikones/portofoli.png"/> 
+</div>
+
+<div class="logia">
+<b>ΤΡΟΠΟΙ ΠΛΙΡΟΜΗΣ</b> <br> <span>όλες οι επιλογές για να <br>διλέξεις ποια σου ταιριάζει</span>
+</div>
+
+<div class="antikimena_kef3">
+<img src="eikones/kotsovolos_colect_store.png"/> 
+</div>
+
+<div class="logia">
+<b>COLLECT @ STORE</b> <br> <span>Για να σε περιμένουν τα <br> προϊοντα σου στο κατάστημα</span>
+</div>
+
+<div class="antikimena_kef3">
+<img src="eikones/kotsovolos_fortigo.png"/> 
+</div>
+
+<div class="logia">
+<b>ΔΩΡΕΑΝ ΑΠΟΣΤΟΛΗ</b> <br> <span>Σε ολη την Ελλάδα με αγορες<br>άνω των &euro;85</span>
+</div>
+
+<div class="antikimena_kef3">
+<img src="eikones/portofoli.png"/> 
+</div>
+
+<div id="email">
+<b>ΜΟΝΑΔΙΚΕΣ ΠΡΟΣΦΟΡΕΣ ΣΤΟ EMAIL ΣΟΥ</b> <br> <input type="email" class="em2" placeholder="Γράψε εδώ το email σου..." >
+
+<a href="" id="email_koumpi">ΕΓΓΡΑΦΗ</a>
+
+</div>
+
+<div style="clear:both"></div>
+</div>
+
+<div  id="dialekste_katigoria">
+<a href=""><img src="eikones/sales-desk.png"></a>
+</div>
+<div style="clear:both"></div>
+
+<div id="ekptoseis">
+<img src="eikones/1000x380.jpg">
+</div>
+<div style="clear:both"></div>
+<div id="ekptoseis_2">
+<img src="eikones/sales-copy-desk.jpg">
+</div>
+<div style="clear:both"></div>
+
+
+<div id="plesio_horeka">
+<div class="horeca">
+<img src="eikones/thumb.jpg"/>
+</div>
+<div class="horeca">
+<img src="eikones/thumb2.jpg"/>
+</div>
+<div class="horeca">
+<img src="eikones/thumb-horeca.jpg"/>
+</div>
+<div class="horeca">
+<img src="eikones/thumb4.jpg"/>
+</div>
+<div style="clear:both"></div>
+</div>
+
+
+<div id="plesio_huawei">
+
+<div id="huawei">
+<img src="eikones/320x380.jpg"/>
+</div>
+
+<div id="weber">
+<img src="eikones/weber.jpg"/>
+</div>
+</div>
+<div style="clear:both"></div>
+
+
+<div id="hot_proionta">
+<div id="kef_hot_proionta">
+<b>ΗΟΤ Προϊόντα</b> 
+</div>
+
+<div class="ant_hot_proionta">
+<div class="minimata">
+<img src="eikones/ekptosi.png"/>
+</div>
+<div class="eikona">
+<img src="eikones/c10383472-1m.jpg" class="megeikona"/> 
+</div>
+<span><b>Samsung UE40MU6402 40</b> <br> <div class="kodikos"> 173021 </div> 
+<div class="timi">
+499.00 &euro; <span>απο</span> <span class="diagrafi"> 699.00&euro;</span>
+</div>
+<div class="agora">
+<a href=""></a>
+</div>
+
+</div>
+
+
+<div class="ant_hot_proionta">
+<div class="eikona">
+<img src="eikones/c10406491-1m.jpg" class="megeikona"/>
+</div>
+<span><b>Samsung UE40MU6402 40"</b> <br> <div class="kodikos"> 173021 </div>
+<div class="timi">
+499.00 &euro; <span>απο</span> <span class="diagrafi"> 699.00&euro;</span>
+</div>
+<div class="agora">
+<a href=""></a>
+</div>
+</div>
+
+
+<div class="ant_hot_proionta">
+<div class="eikona">
+<img src="eikones/c10332041-1m.jpg" class="megeikona" />
+</div>
+<span><b>Intenso 240GB SATA III High</b> <br> <div class="kodikos"> 165739</div>
+<div class="timi">
+69.90 &euro; <span>απο</span> <span class="diagrafi"> 99.00&euro;</span>
+</div>
+<div class="agora">
+<a href=""></a>
+</div>
+</div>
+
+
+<div class="ant_hot_proionta">
+<div class="minimata">
+<img src="eikones/ekptosi.png"/>
+</div>
+<div class="eikona">
+<img src="eikones/c10395482-1m.jpg" class="megeikona" />
+</div>
+<span><b>Matsui M612WM17G</b> <br> <div class="kodikos">  175620 </div>
+<div class="timi">
+189.00 &euro; <span>απο</span> <span class="diagrafi">239.00&euro;</span>
+</div>
+<div class="agora">
+<a href=""></a>
+</div>
+<a href="" class="velaki_koumpi">
+<div class="velaki">
+<b>></b>
+</div>
+</a>
+
+<a href="" class="velaki_koumpi2">
+<div class="velaki2">
+<b><</b>
+</div>
+</a>
+
+</div>
+
+<div style="clear:both"></div>
+</div>
+
+
+<div id="perig_espa">
+<div class="antikimena_espa">
+<img src="eikones/espa_490x290v2.jpg" />
+</div>
+
+<div class="antikimena_espa">
+<img src="eikones/490x290_-nl-business.jpg" style="margin-left:18" />
+</div>
+<div style="clear:both"></div>
+</div>
+
+<div id="korifees_epixiriseis">
+<img src="eikones/1000x170_fassa_new.jpg" width="1020"/>
+</div>
+
+<div id="dimofili_proionta">
+<div id="kef_dimofili_proionta">
+<b>Δημοφιλοί Προϊόντα</b> 
+</div>
+
+<div class="ant_dimofili_proionta">
+<div class="minimata">
+<img src="eikones/ekptosi.png"/>
+</div>
+<div class="eikona2">
+<img src="eikones/c10399442-1m.jpg" class="eikonmeg"/>
+</div>
+<span><b>Samsung UE40MU6402 40</b> <br> <div class="kodikos_dimofili_proionta"> 180049 </div> 
+<div class="timi_dimofili_proionta">
+499.00 &euro; <span>απο</span> <span class="diagrafi_dimofili_proionta"> 699.00&euro;</span>
+</div>
+<div class="agora2">
+<a href=""></a>
+</div>
+
+</div>
+
+
+<div class="ant_dimofili_proionta">
+<div class="minimata">
+<img src="eikones/ekptosi.png"/>
+</div>
+<div class="eikona2">
+<img src="eikones/c10267221-1m.jpg"class="eikonmeg"/>
+</div>
+<span><b>Bosch WAN28288GR</b> <br> <div class="kodikos_dimofili_proionta"> 180049 </div>
+<div class="timi_dimofili_proionta">
+499.00 &euro; <span>απο</span> <span class="diagrafi_dimofili_proionta"> 699.00&euro;</span>
+</div>
+<div class="agora2">
+<a href=""></a>
+</div>
+</div>
+
+
+<div class="ant_dimofili_proionta">
+<div class="eikona2">
+<img src="eikones/c10311281-1m.jpg"class="eikonmeg"/>
+</div>
+<span><b>LG FH4U2TDH1N</b> <br> <div class="kodikos_dimofili_proionta">155257</div>
+<div class="timi_dimofili_proionta">
+69.90 &euro; <span>απο</span> <span class="diagrafi_dimofili_proionta"> 99.00&euro;</span>
+</div>
+<div class="agora2">
+<a href=""></a>
+</div>
+</div>
+
+
+<div class="ant_dimofili_proionta">
+<div class="minimata">
+<img src="eikones/ekptosi.png"/>
+</div>
+<div class="eikona2">
+<img src="eikones/c10364841-1m.jpg"class="eikonmeg"/>
+</div>
+<span><b>Morris MKV64320</b> <br> <div class="kodikos_dimofili_proionta">  161361</div>
+<div class="timi_dimofili_proionta">
+189.00 &euro; <span>απο</span> <span class="diagrafi_dimofili_proionta">239.00&euro;</span>
+</div>
+<div class="agora2">
+<a href=""></a>
+</div>
+</div>
+
+<div style="clear:both"></div>
+<a href="" class="velaki_koumpi">
+<div class="velaki">
+<b>></b>
+</div>
+</a>
+
+<a href="" class="velaki_koumpi3">
+<div class="velaki3">
+<b><</b>
+</div>
+</a>
+</div>
+
+
+<div id="plesio_kathe_paraskevh">
+
+<div id="kathe_paraskevh">
+<img src="eikones/kathe_paraskevh.jpg"/>
+</div>
+
+<div id="chef">
+<img src="eikones/chef.jpg"/>
+</div>
+
+<div style="clear:both"></div>
+<div id="minima1">
+
+</div>
+
+<div style="clear:both"></div>
+<div id="minima2">
+
+</div>
+</div>
+
+<div id="kblog">
+<div id="icon_kblog">
+<img src="eikones/kotsovolos-blog-logo.jpg"/>
+</div>
+<div id="kita_kblog">
+<a href="">Δείτε το Βlog ></a>
+</div>
+<div style="clear:both"></div>
+</div>
+
+<div id="ant_kblog">
+<div class="antikimena_kblog">
+<div class="eikona_kblog">
+<img src="eikones/homepage_blog_washing_steam_atmos.jpg"/>
+</div>
+<div class="plir_kblog">
+<b>Πλυντήρια</b> <br> με λειτουργία ατμού
+</div>
+<div class="keimeno">
+Μπορεί ένα πλυντήριο να κάνει την μπουγάδα σου πιο «φιλική» στο σιδέρωμα, αλλά και να ξαναδώσει την αίσθηση του φρεσκοπλυμένου σ’ 
+ένα ρούχο που έχεις ήδη φορέσει, χωρίς να το… πλύνει; Η απάντηση είναι «ναι»!
+</div>
+<div class="koumpi_kblog">
+<a href="">Περισσότερα > </a>
+</div><div style="clear:both"></div>
+</div>
+
+
+
+<div class="antikimena_kblog">
+<div class="eikona_kblog">
+<img src="eikones/homepage_blog_dishes2.jpg"/>
+</div>
+<div class="plir_kblog">
+<b>Πλυντήρια</b> <br> με λειτουργία ατμού
+</div>
+<div class="keimeno">
+Μπορεί ένα πλυντήριο να κάνει την μπουγάδα σου πιο «φιλική» στο σιδέρωμα, αλλά και να ξαναδώσει την αίσθηση του φρεσκοπλυμένου σ’ 
+ένα ρούχο που έχεις ήδη φορέσει, χωρίς να το… πλύνει; Η απάντηση είναι «ναι»!
+</div>
+<div class="koumpi_kblog">
+<a href="">Περισσότερα > </a>
+</div><div style="clear:both"></div>
+</div>
+
+
+
+<div class="antikimena_kblog">
+<div class="eikona_kblog">
+<img src="eikones/homepage_blog_fournoi.jpg"/>
+</div>
+<div class="plir_kblog">
+<b>Πλυντήρια</b> <br> με λειτουργία ατμού
+</div>
+<div class="keimeno">
+Μπορεί ένα πλυντήριο να κάνει την μπουγάδα σου πιο «φιλική» στο σιδέρωμα, αλλά και να ξαναδώσει την αίσθηση του φρεσκοπλυμένου σ’ 
+ένα ρούχο που έχεις ήδη φορέσει, χωρίς να το… πλύνει; Η απάντηση είναι «ναι»!
+</div>
+<div class="koumpi_kblog">
+<a href="">Περισσότερα > </a>
+</div><div style="clear:both"></div>
+</div>
+</div>
+
+<div id="ant_kblog">
+<div class="antikimena_kblog">
+<div class="eikona_kblog">
+<img src="eikones/homepage_blog_activity.jpg"/>
+</div>
+<div class="plir_kblog">
+<b>Πλυντήρια</b> <br> με λειτουργία ατμού
+</div>
+<div class="keimeno">
+Μπορεί ένα πλυντήριο να κάνει την μπουγάδα σου πιο «φιλική» στο σιδέρωμα, αλλά και να ξαναδώσει την αίσθηση του φρεσκοπλυμένου σ’ 
+ένα ρούχο που έχεις ήδη φορέσει, χωρίς να το… πλύνει; Η απάντηση είναι «ναι»!
+</div>
+<div class="koumpi_kblog">
+<a href="">Περισσότερα > </a>
+</div><div style="clear:both"></div>
+</div>
+</div>
+
+
+<div style="clear:both"></div>
+<div id="iposelido_1">
+<div id="fakelos">
+<img src="eikones/fakelos.png"/>
+</div>
+<div id="kimeno">
+Μην ξεχάσεις!
+</div>
+<div id="mail2">
+<input type="email" id="pp" placeholder="Γράψε εδώ το e-mail σου..." style="width:270px;border:0">
+<a href="" id="email_koumpi2">ΕΓΓΡΑΦΗ</a>
+</div>
+
+
+<div class="social">
+<img src="eikones/dfdf.jpg" width="40"/>
+<img src="eikones/youtube-256.png" width="40"/>
+<img src="eikones/Twitter-icon.jpg" width="40"/>
+<img src="eikones/ret1.jpg" width="40"/>
+<img src="eikones/wed.jpg" width="50"/>
+</div>
+</div>
+
+<div style="clear:both"></div>
+
+<div id="iposelido2">
+
+<div class="listes">
+Η ετερία
+<ul>
+<li>οι αξίες μας</li>
+<li>Η φιλοσοφία μας</li>
+<li>Θέσεις εργασίας</li>
+<li>Τα νέα μας</li>
+<li>Τα βραβεία μας</li>
+<li>Business Solutions</li>
+<li>Αναζήτηση Συνεργατών</li>
+</ul>
+<div style="clear:both"></div>
+</div>
+
+<div class="listes">
+Υπηρεσίες Support 360
+<ul>
+<li>Διαρκής προστασία</li>
+<li>Η φιλοσοφία μας</li>
+<li>Υποστήριξη Συσκευών<br> Ψηφιακής Τεχνολογίας</li>
+<li>Συντήρηση & Επισκευή Συσκευών</li>
+<li>Παράδοση & Εγκατάσταση</li>
+<li>Λίστα γάμου</li>
+<li>Collect @ Store</li>
+</ul>
+</div>
+
+
+<div class="listes">
+'Οροι χρήσης & Ασφάλεια
+<ul>
+<li>Ασφάλεια Συναλλαγών</li>
+<li>Ασφάλεια <br>Προσωπικά Δεδομένα</li>
+<li>Όροι Χρήσης</li>
+<li>Διαδικασία Υποβολής Παραγγελίας</li>
+<li>Τρόποι Πληρωμής</li>
+<li>Πλάνο δόσεων</li>
+<li>Τρόποι Αποστολής</li>
+<li>Πολιτική Επιστροφών</li>
+</ul>
+</div>
+
+<div class="listes">
+'Οροι χρήσης & Ασφάλεια
+<ul>
+<li>Ασφάλεια Συναλλαγών</li>
+<li>Ασφάλεια <br>Προσωπικά Δεδομένα</li>
+<li>Όροι Χρήσης</li>
+<li>Διαδικασία Υποβολής Παραγγελίας</li>
+<li>Τρόποι Πληρωμής</li>
+<li>Πλάνο δόσεων</li>
+<li>Τρόποι Αποστολής</li>
+<li>Πολιτική Επιστροφών</li>
+</ul>
+</div>
+
+<div class="listes" style="width:20%">
+<div class="eikonidia">
+<img src="eikones/norton.png"/>
+</div>
+
+
+<div class="eikonidia">
+<img src="eikones/mcafree.png"/>
+</div>
+
+<div class="eikonidia">
+<img src="eikones/master.png"/>
+</div>
+
+<div class="eikonidia">
+<img src="eikones/verified.png"/>
+</div>
+
+<div class="eikonidia">
+<img src="eikones/diners.png"/>
+</div>
+
+<div class="eikonidia">
+<img src="eikones/american.png"/>
+</div>
+
+</div>
+
+<div style="clear:both"></div>
+</div>
+
+
+
+
+
+
+</div>
+<div style="clear:both"></div>
+</body>
+</html>>
